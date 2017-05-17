@@ -123,10 +123,10 @@ tcp        0      0 0.0.0.0:5900                0.0.0.0:*                   LIST
 如果你和我一样使用的是`Google Chrome`提供的VNC插件，使用方式，在`Address`输入框中输入，宿主机IP:59000,`Picture Quality`选择框使用默认选项，点击`Connect`进入到安装操作系统的界面，你可以安装常规的方式进行安装，等待系统安装完成重启，然后就可以正常使用kvm虚拟化出来的操作系统了。
 
 `Tightvnc`软件的使用，请参考官方手册。
-Tightvnc下载地址：http://www.tightvnc.com/download.php
 
-Tightvnc下载地址：http://www.tightvnc.com/download/2.7.10/tightvnc-2.7.10-setup-64bit.msi
-Tightvnc下载地址：http://www.tightvnc.com/download/2.7.10/tightvnc-2.7.10-setup-32bit.msi
+- Tightvnc下载地址：http://www.tightvnc.com/download.php
+- Tightvnc下载地址：http://www.tightvnc.com/download/2.7.10/tightvnc-2.7.10-setup-64bit.msi
+- Tightvnc下载地址：http://www.tightvnc.com/download/2.7.10/tightvnc-2.7.10-setup-32bit.msi
 
 ### KVM虚拟机管理
 kvm虚拟机是通过virsh命令进行管理的，libvirt是Linux上的虚拟化库，是长期稳定的C语言API，支持KVM/QEMU、Xen、LXC等主流虚拟化方案。链接：http://libvirt.org/
@@ -300,7 +300,7 @@ Last login: Sat Jan 30 12:40:28 2016
 
 到此，各位应该能够体会到，其实kvm是一个非常底层和核心的虚拟化技术，而openstack就是对`kvm`这样的技术进行了一个上层封装，可以非常方便，可视化的操作和维护`kvm`虚拟机，这就是现在`牛`上天的`云计算`技术最底层技术栈，具体怎么实现请看下图。
 
-![Libvirt_support](https://github.com/itweet/itweet-boot/raw/master/img/Libvirt_support.png)
+![Libvirt_support](https://github.com/itweet/labs/raw/master/img/Libvirt_support.png)
 
 如上图，没有`openstack`我们依然可以通过，`libvirt`来对虚拟机进行操作，只不过比较繁琐和难以维护。通过openstack就可以非常方便的进行底层虚拟化技术的管理、维护、使用。
 
