@@ -173,11 +173,13 @@ kvm三种网络类型,桥接、NAT、仅主机模式，默认NAT模式,其他机
 ### 监控kvm虚拟机
 
 - 安装软件监控虚拟机
+
 ```
 yum install virt-top -y
 ```
 
 - 查看虚拟机资源使用情况
+
 ```
 virt-top
 
@@ -257,7 +259,6 @@ virsh list --all
      56     </interface>
 ```
 
-
 启动虚拟机，看到启动前后，桥接变化，vnet0被桥接到了br0
 
 启动前：
@@ -306,16 +307,6 @@ Last login: Sat Jan 30 12:40:28 2016
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
-
-
-
-
-
-
-
-
-
-
 
 
 
