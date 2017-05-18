@@ -1,6 +1,6 @@
 OpenStack 是开源云计算平台，支持多种虚拟化环境，并且其服务组件都提供了 [API接口](https://developer.openstack.org/api-guide/quick-start/index.html) 便于二次开发。
 
-OpenStack通过各种补充服务提供基础设施即服务 Infrastructure-as-a-Service (IaaS)<IaaS>`的解决方案。每个服务都提供便于集成的应用程序接口 :term:`Application Programming Interface (API)。
+OpenStack通过各种补充服务提供基础设施即服务 Infrastructure-as-a-Service (IaaS)<IaaS>`的解决方案。每个服务都提供便于集成的应用程序接口`Application Programming Interface (API)。
 
 ### openstack 逻辑架构图
 ![OpenStack Logical Architecture](https://github.com/itweet/labs/raw/master/img/osog_0001.png)
@@ -38,7 +38,7 @@ OpenStack services
 + Identity service  【Keystone】    为其他OpenStack服务提供认证和授权服务，为所有的OpenStack服务提供一个端点目录。
 + Image service     【Glance】  存储和检索虚拟机磁盘镜像，OpenStack计算会在实例部署时使用此服务。
 + Telemetry服务      【Ceilometer】  为OpenStack云的计费、基准、扩展性以及统计等目的提供监测和计量。
-+ Orchestration服务   【Heat服务】   Orchestration服务支持多样化的综合的云应用，通过调用OpenStack-native REST API和CloudFormation-compatible Query API，支持:term:`HOT <Heat Orchestration Template (HOT)>`格式模板或者AWS CloudFormation格式模板
++ Orchestration服务   【Heat服务】   Orchestration服务支持多样化的综合的云应用，通过调用OpenStack-native REST API和CloudFormation-compatible Query API，支持`HOT <Heat Orchestration Template (HOT)>`格式模板或者AWS CloudFormation格式模板
 
 通过对这些组件的介绍，可以帮助我们在后续的内容中，了解各个组件的作用，便于排查问题，而在你对基础安装，配置，操作和故障诊断熟悉之后，你应该考虑按照生产架构来进行部署。
 
@@ -47,7 +47,7 @@ OpenStack services
 
 ![](https://github.com/itweet/labs/raw/master/img/hwreqs.png) 
 
-这个示例架构需要至少2个（主机）节点来启动基础服务：term:`virtual machine <virtual machine (VM)>`或者实例。像块存储服务，对象存储服务这一类服务还需要额外的节点。
+这个示例架构需要至少2个（主机）节点来启动基础服务`virtual machine <virtual machine (VM)>`或者实例。像块存储服务，对象存储服务这一类服务还需要额外的节点。
 
 - 网络代理驻留在控制节点上而不是在一个或者多个专用的网络节点上。
 
