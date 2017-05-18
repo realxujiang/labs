@@ -1,9 +1,9 @@
 
 # Openstack Series Course
 
-![openstack系列(1) - Kvm虚拟化技术](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(1)-Kvm%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF.md)
+[openstack系列(1) - Kvm虚拟化技术](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(1)-Kvm%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF.md)
 
-![openstack系列(2) - 架构设计](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(2)-%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.md)
+[openstack系列(2) - 架构设计](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(2)-%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.md)
 
 openstack系列(3) - 架构规划
 
