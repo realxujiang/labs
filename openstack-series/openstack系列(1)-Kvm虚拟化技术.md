@@ -301,7 +301,7 @@ Last login: Sat Jan 30 12:40:28 2016
 
 到此，各位应该能够体会到，其实kvm是一个非常底层和核心的虚拟化技术，而openstack就是对`kvm`这样的技术进行了一个上层封装，可以非常方便，可视化的操作和维护`kvm`虚拟机，这就是现在`牛`上天的`云计算`技术最底层技术栈，具体怎么实现请看下图。
 
-![Libvirt_support](https://github.com/itweet/labs/raw/master/img/Libvirt_support.png)
+![Libvirt_support](https://github.com/itweet/labs/raw/master/openstack-series/img/Libvirt_support.png)
 
 如上图，没有`openstack`我们依然可以通过，`libvirt`来对虚拟机进行操作，只不过比较繁琐和难以维护。通过openstack就可以非常方便的进行底层虚拟化技术的管理、维护、使用。
 

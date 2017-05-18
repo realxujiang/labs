@@ -3,7 +3,7 @@ OpenStack 是开源云计算平台，支持多种虚拟化环境，并且其服�
 OpenStack通过各种补充服务提供基础设施即服务 Infrastructure-as-a-Service (IaaS)<IaaS>`的解决方案。每个服务都提供便于集成的应用程序接口`Application Programming Interface (API)。
 
 ### openstack 逻辑架构图
-![OpenStack Logical Architecture](https://github.com/itweet/labs/raw/master/img/osog_0001.png)
+![OpenStack Logical Architecture](https://github.com/itweet/labs/raw/master/openstack-series/img/osog_0001.png)
 
 OpenStack 本身是一个分布式系统，不但各个服务可以分布部署，服务中的组件也可以分布部署。 这种分布式特性让 OpenStack 具备极大的灵活性、伸缩性和高可用性。 当然从另一个角度讲，这也使得 OpenStack 比一般系统复杂，学习难度也更大。 
 
@@ -45,7 +45,7 @@ OpenStack services
 ### 生产部署架构
 建议使用自动化部署工具，例如Ansible, Chef, Puppet, or Salt来自动化部署，管理生产环境。
 
-![](https://github.com/itweet/labs/raw/master/img/hwreqs.png) 
+![](https://github.com/itweet/labs/raw/master/openstack-series/img/hwreqs.png) 
 
 这个示例架构需要至少2个（主机）节点来启动基础服务`virtual machine <virtual machine (VM)>`或者实例。像块存储服务，对象存储服务这一类服务还需要额外的节点。
 
@@ -97,12 +97,12 @@ openstack网络是非常复杂的，并且也支持多种模式其中支持GRE�
 
 - port 可以看做虚拟交换机上的一个端口。port 上定义了 MAC 地址和 IP 地址，当 instance 的虚拟网卡 VIF（Virtual Interface） 绑定到 port 时，port 会将 MAC 和 IP 分配给 VIF。port 与 subnet 是 1对多 关系。一个 port 必须属于某个 subnet；一个 subnet 可以有多个 port。
 
-![](https://github.com/itweet/labs/raw/master/img/vlan_network_node.png)
+![](https://github.com/itweet/labs/raw/master/openstack-series/img/vlan_network_node.png)
 
 如上图所示，为VLAN模式下，网络节点的通信方式。
 
 在我们后续实施安装的时候，选择使用VXLAN网络模式，下面我们来重点介绍一下VXLAN模式。
-![](https://github.com/itweet/labs/raw/master/img/vxlan.png)
+![](https://github.com/itweet/labs/raw/master/openstack-series/img/vxlan.png)
 
 VXLAN网络模式，可以隔离广播风暴，不需要交换机配置chunk口，解决了vlan id个数限制，解决了gre点对点隧道个数过多问题，实现了大2层网络，可以让vm在机房之间无缝迁移，便于跨机房部署。缺点是，vxlan增加了ip头部大小，需要降低vm的mtu值，传输效率上会略有下降。    
 
@@ -124,7 +124,8 @@ Neutron 的设计目标是实现“网络即服务”，为了达到这一目标
 - namespace：用来实现隔离的一套机制，不同 namespace 中的资源之间彼此不可见。
 
 ### 总结
-openstack是一个非法复杂的分布式软件，涉及到很多底层技术，我自己对一些网络的理解也是非常有限，主要还是应用层面的知识，所以本章内容写的比较浅显一些，有问题请留言？在下一章节我们会进入生产环境如何实施规划openstack集群。
+openstack是一个非法复杂的分布式软件，涉及到很多底层技术，我自己对一些网络的理解也是非常有限，主要还是应用层面的知识，所以本章内容写的比较浅显一些，有问题请留言？在下一章节我们会进入生产环境如何实施规划openstack集群，至于openstack底层的技术，我也没有很深入研究，如果有任何不恰当的地方可以进行留言，非常感谢！
+
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
