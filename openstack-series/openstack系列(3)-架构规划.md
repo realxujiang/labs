@@ -202,7 +202,7 @@ openstack-ceilometer-compute-6.1.3-2.el7.noarch
 
 此外，您还可以有多个存储和计算节点。其他非核心 OpenStack 组件（例如 Ironic）还可以位于其各自的节点中。
 
-由于此灵活性，您可以根据可用资源以及您希望在每个节点中对组件进行分组的方式来设计 OpenStack 基础结构。然后，您可以在每个系统上仅安装需要的 OpenStack 软件包，而不是在所有系统上安装整个 OpenStack 软件包。
+由于此灵活性，您可以根据可用资源以及您希望在每个节点中对组件进行分组的方式来设计 OpenStack 基础结构。然后，您可以在每个系统上仅安装需要的 OpenStack 软件包，而不是在所有系统上安装整个 OpenStack 软件包。下一节将进入基础环境准备内容，欢迎关注。
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
