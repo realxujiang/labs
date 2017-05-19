@@ -5,7 +5,7 @@
 
 [openstack系列(2) - 架构设计](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(2)-%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.md)
 
-![openstack系列(3) - 架构规划](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(3)-%E6%9E%B6%E6%9E%84%E8%A7%84%E5%88%92.md)
+[openstack系列(3) - 架构规划](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(3)-%E6%9E%B6%E6%9E%84%E8%A7%84%E5%88%92.md)
 
 openstack系列(4) - 基础环境
 
