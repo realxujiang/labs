@@ -7,7 +7,7 @@
 
 [openstack系列(3) - 架构规划](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(3)-%E6%9E%B6%E6%9E%84%E8%A7%84%E5%88%92.md)
 
-openstack系列(4) - 基础环境
+[openstack系列(4) - 基础环境](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(4)-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83.md)
 
 openstack系列(5) - M版 快速部署
 
