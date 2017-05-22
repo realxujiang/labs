@@ -1,4 +1,4 @@
-openstack allinone
+我们通过`Packstack`来自动化安装openstack机器，Packstack主要是由Redhat推出的用于概念验证（PoC）环境快速部署的工具。Packstack是一个命令行工具，它使用Python封装了Puppet模块，通过SSH在服务器上部署OpenStack。
 
 ### 必备条件
 - Centos 7/Redhat7 最小化安装系统。
