@@ -159,7 +159,7 @@ CONFIG_NETWORK_HOSTS=192.168.2.110
 ```
 
 如上图所示，是集群安装比较关键的配置信息
-- EXCLUDE_SERVERS   你是新添加节点,你需要把已经安装过的`COMPUTE`节点IP集合天在这里,`packastack`会排除不去在去安装。如果是*初次安装*,这里应该留空。
+- EXCLUDE_SERVERS   你是新添加节点,你需要把已经安装过的`COMPUTE`节点IP集合填入,`packastack`会排除不去安装这些节点。如果是*初次安装*,这里应该留空。
 - CONFIG_COMPUTE_HOSTS  填写计算节点IP集合
 - CONFIG_NETWORK_HOSTS  填写网络节点IP
 
