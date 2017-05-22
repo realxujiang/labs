@@ -9,7 +9,7 @@
 
 [openstack系列(4) - 基础环境](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(4)-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83.md)
 
-openstack系列(5) - M版 快速部署
+[openstack系列(5) - M版 快速部署](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(5)-M%E7%89%88_%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2.md)
 
 openstack系列(6) - M版 网络配置
 

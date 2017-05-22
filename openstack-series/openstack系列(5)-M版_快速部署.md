@@ -128,7 +128,7 @@ $ sudo packstack --answer-file=packstack-answers-20160613-231012.txt
 
 执行`packstack --answer-file=xxx.txt`命令后，等待`openstack`安装完成，这是一个漫长的过程，当你看到所有安装项都处于`[DONE]`后，显示一句话`**** Installation completed successfully ******`说明你已经成功安装好openstack一个节点的集群，此时`controller`、`compute`和`network`节点都在同一个节点上，在后续的章节中我们会继续教大家怎么扩容节点。
 
-安装成功之后，我们在执行命令的当前目录下面会生成两个文件，是属于`keystone`的验证文件，如果你需要执行相关管理员的命令，就需要使用它们的身份进行执行，也是访问Dashboard的登录用户。访问地址`http://openstack-controller/dashboard`
+安装成功之后，我们在执行命令的当前目录下面会生成两个文件，是属于`keystone`的验证文件，如果你需要执行相关管理员的命令，就需要使用它们的进行身份认证，也是访问Dashboard的登录用户。访问地址`http://openstack-controller/dashboard`
 
 - keystonerc_admin    超级管理员用户信息
 - keystonerc_demo     demo测试用户信息，它属于一个租户
@@ -147,6 +147,7 @@ source keystonerc_admin
 ![](https://github.com/itweet/labs/raw/master/openstack-series/img/openstack-nova-hostlist.png)
 
 ***如果你想在第一次安装时就安装多个节点？***
+
 你需要修改配置文件`packstack-answers-20160613-231012.txt`, 修改`CONFIG_COMPUTE_HOSTS`配置项。
 
 例如：
@@ -180,7 +181,9 @@ nova host-list # 查看主机节点角色信息
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
 
+
 参考：https://www.rdoproject.org/install/quickstart/
     https://repos.fedorapeople.org/repos/openstack/
     http://cloud.centos.org/centos/7/images/
     https://pom.nops.cloud/Introduction/read_guide.html
+    https://pom.nops.cloud/deployment_tool/packstack.html
