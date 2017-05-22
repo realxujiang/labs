@@ -13,9 +13,9 @@
 
 openstack系列(6) - M版 网络配置
 
-openstack系列(7) - M版 扩容节点
+openstack系列(7) - M版 云主机
 
-openstack系列(8) - M版 云主机
+openstack系列(8) - M版 扩容节点
 
 openstack系列(9) - M版 云硬盘(1)
 
