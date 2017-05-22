@@ -11,7 +11,7 @@
 
 [openstack系列(5) - M版 快速部署](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(5)-M%E7%89%88_%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2.md)
 
-openstack系列(6) - M版 网络配置
+[openstack系列(6) - M版 网络配置](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(6)-M%E7%89%88_%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.md)
 
 openstack系列(7) - M版 云主机
 

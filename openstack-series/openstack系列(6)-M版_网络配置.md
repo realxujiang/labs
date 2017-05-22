@@ -195,6 +195,7 @@ OVS_BRIDGE=br-ex
     
 
 3、网络拓扑检测，项目 > 网络 > 网络拓扑
+
 ![](https://github.com/itweet/labs/raw/master/openstack-series/img/network-topology.png)
 
 openstack-cloud租户网络和公共网络打通之后，就如上图所示，网络拓扑图。
