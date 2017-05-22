@@ -169,7 +169,7 @@ CONFIG_NETWORK_HOSTS=192.168.2.110
 ```
 cinder list   # 查看云硬盘信息
 
-nova host-list # 查看主机节点角色信息
+nova host-list # 查看节点角色信息
 ```
 ![](https://github.com/itweet/labs/raw/master/openstack-series/img/nova-lists.png)
 
