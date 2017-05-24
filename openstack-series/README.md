@@ -15,7 +15,7 @@
 
 [openstack系列(7) - M版 云主机](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(7)-M%E7%89%88_%E4%BA%91%E4%B8%BB%E6%9C%BA.md)
 
-openstack系列(8) - M版 扩容节点
+[openstack系列(8) - M版 扩容节点](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(8)-M%E7%89%88_%E6%89%A9%E5%AE%B9%E8%8A%82%E7%82%B9.md)
 
 openstack系列(9) - M版 云硬盘1
 
