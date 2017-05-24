@@ -13,13 +13,13 @@
 
 [openstack系列(6) - M版 网络配置](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(6)-M%E7%89%88_%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.md)
 
-openstack系列(7) - M版 云主机
+[openstack系列(7) - M版 云主机](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(7)-M%E7%89%88_%E4%BA%91%E4%B8%BB%E6%9C%BA.md)
 
 openstack系列(8) - M版 扩容节点
 
-openstack系列(9) - M版 云硬盘(1)
+openstack系列(9) - M版 云硬盘1
 
-openstack系列(9) - M版 云硬盘(2)
+openstack系列(9) - M版 云硬盘2
 
 openstack系列(10) - 平台使用
 
