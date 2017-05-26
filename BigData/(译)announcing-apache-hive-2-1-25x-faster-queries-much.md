@@ -19,7 +19,7 @@ Hive 有很多新的改变，很难说具体的亮点， 但是以下有几个�
 
 - 总共超过了2100个新功能， 改善修复了Hive 2.0 和 Hive 2.1之间存在的问题，惊人的创新率以及持续增长的势头。
 
-![](Hive-2.1-blog-Improvements.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-Improvements.png)
 
 我们将在后期文章中探索其他话题， 现在我们将重点放在Hive 2中最值得期待的特性和巨大的性能提升 。
 
@@ -27,9 +27,9 @@ Hive 有很多新的改变，很难说具体的亮点， 但是以下有几个�
 
 Hive 2中最大的故事也是最受期待的功能： LLAP 是live long and process的缩写，总结一下就是， LLAP 结合持续查询服务和优化内存缓冲让Hive可以立刻启动查询，避免了不必要的磁盘 I/O浪费， 换句话说，  LLAP 是第二代大数据系统：LLAP 引领了内存计算（而不是磁盘计算），LLAP智能的缓存了内存并通过客户端共享数据，同时还保留了在同一个集群里面弹性扩展的能力。
 
-![图表一：LLAP 架构](Hive-2.1-blog-LLAP-Architecture.png)
+![图表一：LLAP 架构](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-LLAP-Architecture.png)
 
-![图标二：Tez LLAP process 对比Tez execution process 和 MapReduce process](Hive-2.1-blog-MR-vs-Tez-vs-LLAP.png)
+![图标二：Tez LLAP process 对比Tez execution process 和 MapReduce process](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-MR-vs-Tez-vs-LLAP.png)
 
 ### Comparing Hive with LLAP to Hive on Tez
 
@@ -37,7 +37,7 @@ Hive 2中最大的故事也是最受期待的功能： LLAP 是live long and pro
 
 全面测试环境如下， 但是更高级别的测试运行使用的是10个强大的虚拟机(VMs) 1TB 数据集，目的是展示通用的BI工具在数据扩张时的性能。同样的虚拟机(VMs) 和数据在Hive1和Hive2上测试，所有的报告显示在各个Hive版本中平均运行次数为3次。
 
-![图表3：使用Tez的Hive1 vs 使用LLAP的Hive2](Hive-2.1-blog-Hive-Tez-vs-LLAP)
+![图表3：使用Tez的Hive1 vs 使用LLAP的Hive2](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-Hive-Tez-vs-LLAP)
 
 如你所见，LLAP显著的性能收益， 对比 Hive 1的9.58秒，Hive LLAP 最少查询运行时间仅为1.3秒.
 
@@ -100,7 +100,7 @@ Hive 2介绍了在reduce中矢量化 Map Join和动态分区hash join，从本�
 
 如下屏幕抓图提示了如何利用Ambari的配置支持LLAP。请注意， Ambari的LLAP配置正在持续演变中，所以这篇文章及当前安装可能会和图片稍有不同。
 
-![图表4：在Apache Ambari中安装StreamlinedLLAP](Hive-2.1-blog-LLAP-config.png)
+![图表4：在Apache Ambari中安装StreamlinedLLAP](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-LLAP-config.png)
 
 #### 数据：
 
@@ -121,7 +121,7 @@ Hive 2介绍了在reduce中矢量化 Map Join和动态分区hash join，从本�
 2.  在HDP 2.5 技术的预览Sandbox上试用LLAP， 如果你想调整一下Sandbox释放更多内存， 你可以选择最小的投入把LLAP 作为测试驱动器来完成。
 3.  使用 HDP-AWS 技术预览的LLAP模板。选择LLAP集群类型，然后还需要一个AWS账户。
 
-![图表5：LLAP in HDP-AWS](Hive-2.1-blog-LLAP-in-HDP-AWS.png)
+![图表5：LLAP in HDP-AWS](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-LLAP-in-HDP-AWS.png)
 
 原文链接：https://hortonworks.com/blog/announcing-apache-hive-2-1-25x-faster-queries-much/
 
