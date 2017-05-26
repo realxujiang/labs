@@ -106,7 +106,7 @@ Hive 2介绍了在reduce中矢量化 Map Join和动态分区hash join，从本�
 
 •      TPC-DS通过date_sk扩展1000列分区数据，存储为ORC格式，同样的数据和表用于Hive 1 和 Hive 2.   
 
-查询：
+#### 查询：
 
 •   测试是通过 Hive 测试台驱动生成数据以及query，同样的query文本文件用于Hive1和Hive 2. 参考https://github.com/t3rmin4t0r/hive-testbench/tree/hive14。
 
