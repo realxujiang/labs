@@ -123,9 +123,9 @@ Hive 2介绍了在reduce中矢量化 Map Join和动态分区hash join，从本�
 
 ![图表5：LLAP in HDP-AWS](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-LLAP-in-HDP-AWS.png)
 
-原文链接：https://hortonworks.com/blog/announcing-apache-hive-2-1-25x-faster-queries-much/
+译文原文：https://hortonworks.com/blog/announcing-apache-hive-2-1-25x-faster-queries-much/
 
-原文发表：2016年7月20日
+译文发表：2016年7月20日
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
