@@ -37,7 +37,7 @@ Hive 2中最大的故事也是最受期待的功能： LLAP 是live long and pro
 
 全面测试环境如下， 但是更高级别的测试运行使用的是10个强大的虚拟机(VMs) 1TB 数据集，目的是展示通用的BI工具在数据扩张时的性能。同样的虚拟机(VMs) 和数据在Hive1和Hive2上测试，所有的报告显示在各个Hive版本中平均运行次数为3次。
 
-![图表3：使用Tez的Hive1 vs 使用LLAP的Hive2](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-Hive-Tez-vs-LLAP)
+![图表3：使用Tez的Hive1 vs 使用LLAP的Hive2](https://github.com/itweet/labs/raw/master/BigData/img/Hive-2.1-blog-Hive-Tez-vs-LLAP.png)
 
 如你所见，LLAP显著的性能收益， 对比 Hive 1的9.58秒，Hive LLAP 最少查询运行时间仅为1.3秒.
 
