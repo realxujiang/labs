@@ -7,7 +7,7 @@ Expanding your single-node OpenStack cloud to include a second compute node requ
 
 First, edit the "answer file" generated during the initial Packstack setup. You'll find the file in the directory from which you ran Packstack.
 
-`NOTE:` by default, $youranswerfile is called packstack-answer-$date-$time.txt
+`NOTE:` by default, `$youranswerfile is called packstack-answer-$date-$time.txt`
 
 ```
 [root@openstack-controller ~]# ls packstack-answers-20160517-215941.txt
@@ -34,7 +34,7 @@ CONFIG_NETWORK_HOSTS=192.168.2.110
 ### Re-run packstack with the new values
 Run packstack again, specifying your modified answer file:
 
-`NOTE:` by default $youranswerfile is called packstack-answer-$date-$time.txt
+`NOTE:` by default `$youranswerfile is called packstack-answer-$date-$time.txt`
 
 Example:
 ```
