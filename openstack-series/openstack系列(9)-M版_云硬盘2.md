@@ -330,6 +330,11 @@ systemctl status *.service #查询服务运行状态
 systemctl --failed #显示启动失败的服务
 ```
 
+
+原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
+`本博客的文章集合:` http://www.itweet.cn/blog/archive/
+
+
 参考：http://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Quickstart/
      http://www.gluster.org/community/documentation/index.php/GlusterFS_Cinder
      https://www.gluster.org/
