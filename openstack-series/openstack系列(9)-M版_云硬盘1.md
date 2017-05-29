@@ -90,7 +90,7 @@ Swift 最初是由 Rackspace 公司开发的高可用分布式对象存储服务
 
 此项目是基于 Python 开发的，采用 Apache 2.0 许可协议，可用来开发商用系统。
 
-![图 Swift 系统架构](Swift-architecture.png)
+![图 Swift 系统架构](https://github.com/itweet/labs/raw/master/openstack-series/img/Swift-architecture.png)
 
 Swift 组件包括：
 
@@ -108,7 +108,7 @@ Swift 组件包括：
 ### Cinder 架构
 Cinder 比 Swift 简单得多，因为它不提供自动对象分布和复制。图 1 显示了 Cinder 架构。
 
-![图 1. Cinder architecture](Cinder-architecture.png)
+![图 1. Cinder architecture](https://github.com/itweet/labs/raw/master/openstack-series/img/Cinder-architecture.png)
 
 与其他 OpenStack 项目类似，Cinder 的功能通过 API 暴露给仪表板和命令行。它能够通过具有具象状态传输 (Representational State Transfer, REST) 的 HTTP API 来访问对象存储，并使用一个名为 Auth Manager 的 Python 类将身份验证纳入 OpenStack Keystone。
 API 解析所有传入的请求并将它们转发给消息队列，调度程序和卷服务器在该队列中执行实际的工作。在创建新的卷时，调度程序将会决定哪台主机应对该卷负责。默认情况下，它会选择拥有最多可用空间的节点。
