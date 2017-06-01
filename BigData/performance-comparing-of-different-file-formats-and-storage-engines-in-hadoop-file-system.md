@@ -154,8 +154,8 @@ Kudu擅长快速随机查询而Parquet擅长快速扫描及提取数据。
 
 译文原文：https://blog.cloudera.com/blog/2017/02/performance-comparing-of-different-file-formats-and-storage-engines-in-hadoop-file-system/
 
-欢迎关注微信公众号，阅读更多有关云计算、大数据文章。
-![](https://github.com/itweet/labs/raw/master/common/img/weixin_public.png)
+欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
+![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.png)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/

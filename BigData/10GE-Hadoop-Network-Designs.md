@@ -82,6 +82,8 @@ Hadoop是被一个网络公司设计的（雅虎）出于必要的有效存储�
 
 就像你用1GE的集群你可以创建一些令人映像深刻的小集群，随着不断发展你可以用低成本，低能耗，固定10G 或者40G的互联网交换机，创建一个具有3层交换配置的网络，你不需要一个2层 在机架间，也不需要一个又贵又庞大的机箱交换机来完成工作。
 
+欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
+![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.png)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
