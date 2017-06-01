@@ -1,4 +1,4 @@
-宣布Apache Hive 2.1:  查询性能提升25x以上
+宣布Apache Hive 2.1:  查询性能提升25x以上 
 ---
 
 Apache Hive 2.1发布于一个月以前， 这是一个回顾Hive2如何彻底改变Hadoop 上的SQL 引擎的机会。

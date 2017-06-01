@@ -1,4 +1,4 @@
-Apache Hive vs Apache Impala Query Performance
+Apache Hive vs Apache Impala Query Performance（译文）
 ---
 
 ![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2016-10-11-at-11.45.03-AM.png)

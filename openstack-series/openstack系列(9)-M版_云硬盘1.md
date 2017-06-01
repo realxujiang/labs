@@ -1,4 +1,4 @@
-Openstack系列第一篇自动化部署完成之后，此篇文章讲解企业级私有云后端云盘存储选型;OpenStack 存储组件cinder，swift，glance的区别和应用场景？
+Openstack系列-自动化部署完成之后，此篇文章讲解企业级私有云后端云盘存储选型;OpenStack 存储组件cinder，swift，glance的区别和应用场景？
 
 Swift——提供对象存储 （Object Storage），在概念上类似于Amazon S3服务，不过swift具有很强的扩展性、冗余和持久性，也兼容S3 API
 

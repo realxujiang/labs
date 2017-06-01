@@ -1,4 +1,4 @@
-如何在 Apache Hadoop中使用新版HDFSIntra-DataNode 磁盘平衡器
+如何在Apache Hadoop中使用新版HDFS Intra-DataNode磁盘均衡器 （译文）
 ---
 
 ***目前HDFS包含了(在CDH 5.8.2 及更高版本)一个综合的容量管理存储方法，该方法用于跨节点移动数据。***

@@ -1,4 +1,4 @@
-10GE-Hadoop-Network-Designs
+10GE-Hadoop-Network-Designs （译文）
 ---
 
 10G 的Hadoop有什么意义呢？你会怎么设计集群呢？我们一起讨论一下适合或者不适合10G Hadoop的案例，然后看看怎么对10G集群进行网络的设计。如果你想快速开启10G Hadoop或升级， 基于Hadoop集群和网络请认真阅读这篇文章然后再回过头来思考。
