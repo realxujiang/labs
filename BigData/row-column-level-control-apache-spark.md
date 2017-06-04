@@ -24,23 +24,23 @@ Spark SQL 有多种不同的访问模式—Spark Thrift Server over JDBC/ODBC, S
 ### 示例数据和Ranger的访问控制策略
 我们假设一下我们有一个客户表，t_customer'，在数据库'db_spark中包含以下数据`。
 
-![](Screen-Shot-2017-05-16-at-10.02.06-PM.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2017-05-16-at-10.02.06-PM.png)
 
 例如有两个用户，“datascience” 和“billing”。 用访问权限规则定义Apache Ranger限制“datascience” 用户只能访问男性顾客，并且只能访问前四个名称字符。“billing”用户没有这种限制。
 
 ### SQL用JDBC/ODBC通过 Spark Thrift Server访问Hive表
 下方示例中，`datascience`用户登录 `beeline` 和 `Zeppelin` ，仅访问男性用户并屏蔽用户的姓。
 
-![](Screen-Shot-2017-05-16-at-10.06.43-PM.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2017-05-16-at-10.06.43-PM.png)
 
-![](Screen-Shot-2017-05-16-at-10.07.58-PM.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2017-05-16-at-10.07.58-PM.png)
 
 ### 使用 Scala/ Python/ R编程访问Hive表格
 当两个用户运行同样的SQL query从客户表中检索所有的数据 ，结果会有所不同。接下来的环节展示了两种 spark-shell 命令，一个用于‘billing’ 用户， 另一个用于限制更多的“datascience” 用户。
 
-![](Screen-Shot-2017-05-16-at-10.13.57-PM.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2017-05-16-at-10.13.57-PM.png)
 
-![](Screen-Shot-2017-05-16-at-10.20.23-PM.png)
+![](https://github.com/itweet/labs/raw/master/BigData/img/Screen-Shot-2017-05-16-at-10.20.23-PM.png)
 
 ### 总结：
 访问权限是企业的关键需求，现在SparkSQL的行/列级访问权限，屏蔽和密文等提供了企业级细粒度的访问权限。SparkSQL的访问通道遵循的是Hive用户遵循的同样的访问权限规则。此操作可以移除SparkSQL的关键限制， 我们认为还可以采纳更多的SparkSQL功能。
