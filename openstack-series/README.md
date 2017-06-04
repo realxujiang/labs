@@ -21,7 +21,7 @@
 
 [openstack系列(9) - M版 云硬盘2](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(9)-M%E7%89%88_%E4%BA%91%E7%A1%AC%E7%9B%982.md)
 
-openstack系列(10) - 平台使用
+[openstack系列(10) - 平台使用](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(10)-%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8.md)
 
 openstack系列(11) - 平台运维
 
