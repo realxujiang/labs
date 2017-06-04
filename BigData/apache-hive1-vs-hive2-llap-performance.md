@@ -61,8 +61,7 @@ python Hadoopdb-tpcds-test.py spark tpcds_bin_partitioned_orcfile_1000
 
 
 ### hawq install 
- 
-缺少：yum install net-tools
+
 
 
 欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
