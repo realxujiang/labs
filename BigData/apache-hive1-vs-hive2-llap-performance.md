@@ -60,7 +60,43 @@ hive1性能和hive2支持Llap的性能比较
 python Hadoopdb-tpcds-test.py spark tpcds_bin_partitioned_orcfile_1000
 
 
-### hawq install 
+### Hawq Load Data Error
+
+```
+drop external table pxf_sales_info;
+
+CREATE EXTERNAL TABLE pxf_sales_info(
+  location TEXT, 
+  month TEXT, 
+  number_of_orders INTEGER, 
+  total_sales FLOAT8
+) 
+LOCATION ('pxf://bigdata-server-1:51200/sales_info?Profile=Hive') 
+FORMAT 'custom' (FORMATTER='pxfwritable_import');
+
+SELECT * FROM pxf_sales_info;
+```
+
+TPCDS load数据报错：
+
+```
+gpfdist: error while loading shared libraries: libapr-1.so.0: cannot open shared object file: No such file or directory
+```
+
+解决：https://discuss.pivotal.io/hc/en-us/articles/115004386307-GPFDIST-Error-while-loading-shared-Libraries-libapr-1-so-0-cannot-open-shared-object-file-No-such-file-or-directory
+
+
+```
+gpfdist: error while loading shared libraries: libevent-1.4.so.2: cannot open shared object file: No such file or directory
+```
+
+解决：`yum install -y libevent`
+
+
+### Impala 整合HDP报错
+```
+NoSuchMethodError: org.apache.hadoop.hive.metastore.MetaStoreUtils.updatePartitionStatsFast(Lorg/apache/hadoop/hive/metastore/api/Partition;Lorg/apache/hadoop/hive/metastore/Warehouse;)Z
+```
 
 
 
