@@ -10,7 +10,8 @@ openstack系列(11) - 后记
 写完这篇记才算圆满！
 
 - openstack-series开源项目：
-    + https://github.com/itweet/labs/tree/master/openstack-series
+    + 教程如有描述不巧当之处，非常希望各位及时提[Issues](https://github.com/itweet/labs/issues)，我即刻改正，避免误导各位
+    + 地址：https://github.com/itweet/labs/tree/master/openstack-series
 
 Openstack系列文章集合列表，大家可以收藏一下，以备不时之需。
 
