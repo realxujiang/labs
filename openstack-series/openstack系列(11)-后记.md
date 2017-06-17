@@ -9,7 +9,6 @@ openstack系列(11) - 后记
 
 写完这篇记才算圆满！
 
-
 - openstack-series开源项目：
     + https://github.com/itweet/labs/tree/master/openstack-series
 
