@@ -9,9 +9,13 @@ openstack系列(11) - 后记
 
 写完这篇记才算圆满！
 
+
+- openstack-series开源项目：
+    + https://github.com/itweet/labs/tree/master/openstack-series
+
 Openstack系列文章集合列表，大家可以收藏一下，以备不时之需。
 
-### Openstack Series Course
+***Openstack Series Course***
 
 [openstack系列(1) - Kvm虚拟化技术](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(1)-Kvm%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF.md)
 
@@ -43,4 +47,4 @@ Openstack系列文章集合列表，大家可以收藏一下，以备不时之�
 ![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
-`本博客的文章集合:` http://www.itweet.cn/blog/archive/·
+`本博客的文章集合:` http://www.itweet.cn/blog/archive

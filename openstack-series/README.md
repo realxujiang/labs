@@ -25,5 +25,10 @@
 
 [openstack系列(11) - 平台运维](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(11)-%E5%B9%B3%E5%8F%B0%E8%BF%90%E7%BB%B4.md)
 
-openstack系列(11) - 后记
+[openstack系列(11) - 后记](https://github.com/itweet/labs/blob/master/openstack-series/openstack%E7%B3%BB%E5%88%97(11)-%E5%90%8E%E8%AE%B0.md)
 
+欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
+![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
+
+原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
+`本博客的文章集合:` http://www.itweet.cn/blog/archive
