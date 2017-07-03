@@ -86,7 +86,6 @@ HBASE-16981解决了Apache HBase MOB的文件数量缩放问题。这种技术�
 - [2] https://blog.cloudera.com/blog/2009/02/the-small-files-problem/
 - [3] https://issues.apache.org/jira/browse/HBASE-16981
 
-
 欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
 ![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
