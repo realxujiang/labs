@@ -81,6 +81,7 @@ alter 't1', {NAME => 'f1', MOB_COMPACT_PARTITION_POLICY => 'monthly'}
 HBASE-16981解决了Apache HBase MOB的文件数量缩放问题。这种技术将可用于Apache HBase 2.0.0发行版。CDH支持CDH 5.4.0+中的Apache HBase MOB。 HBASE-16981被移植在CDH 5.11.0中。
 
 参考：
+
 - [1] https://blog.cloudera.com/blog/2015/06/inside-apache-hbases-new-support-for-mobs/
 - [2] https://blog.cloudera.com/blog/2009/02/the-small-files-problem/
 - [3] https://issues.apache.org/jira/browse/HBASE-16981
