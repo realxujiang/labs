@@ -51,8 +51,7 @@ HBASE-16981的基本思路是将一个日历周或一个日历月中的MOB文件
 
 为了克服最初提出的方法的不足之处，HBASE-16981采用了新的每周和每月策略，分阶段MOB压缩方法。图2展示了每月策略的使用，每周策略的使用方法类似途中的方法。
 
-![](https://github.com/itweet/labs/raw/master/BigData/img/Figure-2-Staging-MOB-compaction-with-monthly-policy.png)
-Figure 2 Staging MOB compaction with monthly policy
+![Figure 2 Staging MOB compaction with monthly policy](https://github.com/itweet/labs/raw/master/BigData/img/Figure-2-Staging-MOB-compaction-with-monthly-policy.png)
 
 正如如图2所示，MOB压缩发生在11/15/2016。基于配置了MOB阈值的每日分区中压缩当前日历周中的文件。在图2中，11/14/2016的文件被压缩在一起，11/15/2016的文件被压缩在一起。本月的日历周文件都是基于每周分区与每周阈值进行压缩。（配置为MOB-threshold x 7）。在图2中， 11/1/2016 到
 11/6/2016的文件被压缩在一起，11/7/2016 到11/13/2016 的文件被压缩在一起。过去几个月的文件基于月阈值分区（配置为MOB-threshold×28）进行压缩。在图2中，10/1/2016到10/31/2016的文件被压缩在一起。值得注意的是，2016年11月的第一个日历周是从10/31/2016到11/6/2016。 由于10/31/2016在过去一个月内，当天的文件按月分区进行压缩，这就导致每周分区只剩下6天（11/1/2016〜11/6/2016）。压缩之后，如果配置MOB压缩阈值和MOB压缩批量大小配置适宜的话，则有5个文件。
