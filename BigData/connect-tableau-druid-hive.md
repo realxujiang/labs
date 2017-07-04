@@ -11,7 +11,7 @@
 
 我们一起来看看Tableau到Druid是如何工作的我们从连接普通对话框开始，就像你平时连接Hive一样，在Tableau中使用Hortonworks Hadoop Hive的连接类型。
 
-![Hortonworks Hadoop Hive](https://github.com/itweet/labs/raw/master/BigData/img/Part3Image1.png.png)
+![Hortonworks Hadoop Hive](https://github.com/itweet/labs/raw/master/BigData/img/Part3Image1.png)
 
 请注意，因为我们正在连接Hive LLAP，所以我们连接到的端口是10500而不是往常的端口10000。
 
@@ -30,7 +30,6 @@
 Druid可用作HDP 2.6技术预览。除了Hive / Druid集成之外，Hortonworks还可以使用Apache Ambari轻松完成部署、配置和监控Druid，从而使用Druid变得很容易。通过这些简化，在Hadoop方面很博学的用户应该可以在几小时内通过[GitHub](https://github.com/cartershanklin/hive-druid-ssb)上的资料重现本文档中的所有内容。我们非常支持您尝试使用Druid，[HDP](https://hortonworks.com/downloads/)或[Hortonworks数据云](https://hortonworks.com/products/cloud/aws/)，并向[Hortonworks社区](https://community.hortonworks.com/topics/druid.html)提供您的反馈意见。
 
 我们与[AtScale](http://blog.atscale.com/hortonworks-chooses-atscale)密切合作的一部分是定期讨论如何使BI-on-Hadoop为我们的共同客户提供更好的体验。请参阅[AtScale博客](http://blog.atscale.com/hive-druid-atscale)，了解更多有关AtScale + Hive / Druid的信息。
-
 
 欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
 ![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
