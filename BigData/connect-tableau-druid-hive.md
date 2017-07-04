@@ -11,13 +11,13 @@
 
 我们一起来看看Tableau到Druid是如何工作的我们从连接普通对话框开始，就像你平时连接Hive一样，在Tableau中使用Hortonworks Hadoop Hive的连接类型。
 
-![Hortonworks Hadoop Hive](Part3Image1.png.png)
+![Hortonworks Hadoop Hive](https://github.com/itweet/labs/raw/master/BigData/img/Part3Image1.png.png)
 
 请注意，因为我们正在连接Hive LLAP，所以我们连接到的端口是10500而不是往常的端口10000。
 
 接下来，Druid cube就像普通Hive表一样可见，可以像其他表一样加载到Tableau中。我们持续使用SSB数据，因此我们将加载SSB  druid cube作为数据源。 就Tableau而言，它关心的只是一个常规的Hive表。
 
-![Druid Table](Part3Image2-1024x622.png)
+![Druid Table](https://github.com/itweet/labs/raw/master/BigData/img/Part3Image2-1024x622.png)
 
 结果是，Tableau发起的查询可以被推送到Druid，终端用户可以非常快速地访问他们的数据。
 
