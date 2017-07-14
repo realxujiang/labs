@@ -157,7 +157,7 @@ NoSuchMethodError: org.apache.hadoop.hive.metastore.MetaStoreUtils.updatePartiti
 ```
 
 ### TPCDS 性能
-！[Hive2-with-LLAP](https://github.com/itweet/labs/raw/master/BigData/img/Hive2-with-LLAP.png)
+![Hive2-with-LLAP](https://github.com/itweet/labs/raw/master/BigData/img/Hive2-with-LLAP.png)
 
 上图，可以看出，Hive2在性能上有了很大的提升，至于为什么，关注微信的可能又看到过有关Hive with LLAP优化的文章，剖析了很多篇，由于个人事迹问题，导致博客和微信有些文章没时间同步。
 
