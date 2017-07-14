@@ -114,7 +114,7 @@ select jvm_heap_used_mb where serviceName=SOLR-1
 
 现在我们有一个稳定运行的 Solr。 [本文的第2部分](http://blog.cloudera.com/blog/2017/06/solr-memory-tuning-for-production-part-2/)将深入展示如何调整内存，获得更多Solr之外的内存以及如何调整GC。第2部分中还描述的最佳实践方法。
 
-第二部分最佳实践内容，将在后续持续更新。    
+第二部分最佳实践内容，将在后续持续更新。
 
 说明：由于是工作之余进行维护，不能每天持续更新，定会保证文章的质量和原创性。相关最佳实践系列，下一阶段开启BigData系列内容，敬请期待。
 
