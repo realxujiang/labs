@@ -1,4 +1,4 @@
-SPARK-ON-HBASE：基于HBASE连接器的数据框架
+SPARK-ON-HBASE：基于HBASE连接器的DataFrame
 ---
 
 我们非常高兴的宣告由Hortonworks和Bloomberg合作开发完成的[Spark-HBase](https://github.com/hortonworks/shc.git) 连接器技术预览版的发行。
@@ -173,7 +173,6 @@ kinit -k -t /tmp/hrt_qa.headless.keytab hrt_qa
 - [2] Spark-package: http://spark-packages.org/package/zhzhan/shc
 - [3] Apache HBase:  https://hbase.apache.org/
 - [4] Apache Spark: http://spark.apache.org/
-
 
 欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
 ![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
