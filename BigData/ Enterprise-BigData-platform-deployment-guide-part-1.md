@@ -7,11 +7,11 @@
 
 操作系统版本CentOs6.8，用户名root，密码123456.
 
-![服务器列表](server_list.png)
+![服务器列表](https://github.com/itweet/labs/raw/master/BigData/img/server_list.png)
 
 ### 网络
 
-![集群网络](cluster_network.png)
+![集群网络](https://github.com/itweet/labs/raw/master/BigData/img/cluster_network.png)
 
 如上图所示，可容纳2560个节点的集群网络结构，构建10GE网络的庞大集群，网络设备是典型和核心层交换机、汇聚层交换机。图示为Dell的交换机产品，类似H3C、华为也有相关的硬件。需要Z9000*16台设备，Z9000是全40gb的汇聚交换。
 分为64个rack，每个rack最大可容纳40台1RU服务器，总共可支撑2560个节点。具体部署过程中，注意主节点相关角色放到不同的机架上，Zookeeper，JournalNode节点放到不同机架。在后续内容有更加详细的介绍。
