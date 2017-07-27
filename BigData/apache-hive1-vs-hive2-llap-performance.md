@@ -1,17 +1,15 @@
-hive1性能和hive2支持Llap的性能比较
+hive1性能和hive2-with-LLAP的性能比较
 ---
 
-### 环境
-
-硬件环境是在比较老旧的Dell R710机器上测试的，具体配置参考下面内容，我们在这里主要测试和探讨的是对Spark2、Hive2、Spark1、Hive1进行跑同样的TPCDS测试用例、比较它们的性能有多大差别，其中也会测一组最早期的`Hive on MR`的性能。
+本测试硬件环境是在比较老旧的`Dell R710`机器上测试的，具体配置参考下面内容，我们在这里主要测试和探讨的是对Spark2、Hive2、Spark1、Hive1进行跑同样的TPCDS测试用例、比较它们的性能有多大差别，其中也会测一组最早期的`Hive on MR`的性能。
 
 #### 硬件
 - CPU ： 24 
 - 内存：128 G
-- 磁盘：300g*5 块 / 台
+- 磁盘：300g*5 块 / node
 
 #### 网络
-- 千兆网络 1G/S 
+- 千兆网络 1 Gbits/sec
 
 #### 系统
 - CentOS Linux release 7.2.1511 (Core) 
@@ -99,7 +97,7 @@ python Hadoopdb-tpcds-test.py Hive2 tpcds_bin_partitioned_orcfile_1000
 
 执行的TPCDS相关Log日志，我已经上传到百度云：
     
-链接: https://pan.baidu.com/s/1nvE55fN 密码: 999r
+`链接: https://pan.baidu.com/s/1nvE55fN 密码: 999r`
 
 里面有几个压缩文件，解压后对应有执行SQL的时间情况、执行SQL过程记录情况。
 
@@ -130,7 +128,7 @@ FORMAT 'custom' (FORMATTER='pxfwritable_import');
 SELECT * FROM pxf_sales_info;
 ```
 
-TPCDS load数据报错，看样子依赖很多c库，一个个装吧。
+- Q1. TPCDS load数据报错，看样子依赖很多c库，一个个装吧。
 
 ```
 gpfdist: error while loading shared libraries: libapr-1.so.0: cannot open shared object file: No such file or directory
@@ -143,6 +141,122 @@ gpfdist: error while loading shared libraries: libevent-1.4.so.2: cannot open sh
 ```
 
 解决：`yum install -y libevent`
+
+```
+gpfdist: error while loading shared libraries: libyaml-0.so.2: cannot open shared object file: No such file or directory
+```
+
+解决：`yum install libyaml -y`
+
+- Q2. 安装成功启动`HAWQ Standby Master`初始化的时候报错，原因是系统缺少`net-tools`导致。
+
+```
+20170721:12:58:38:029877 hawq_init:bigdata-server-2:gpadmin-[INFO]:-Check: hawq_segment_temp_directory is set
+20170721:12:58:39:029877 hawq_init:bigdata-server-2:gpadmin-[ERROR]:-bash: /sbin/ifconfig: No such file or directory
+20170721:12:58:39:029877 hawq_init:bigdata-server-2:gpadmin-[INFO]:-Start to init standby master: 'bigdata-server-2'
+20170721:12:58:39:029877 hawq_init:bigdata-server-2:gpadmin-[INFO]:-This might take a couple of minutes, please wait...
+20170721:12:58:43:030205 hawqinit.sh:bigdata-server-2:gpadmin-[ERROR]:-Stop master failed
+```
+
+解决：`yum -y install net-tools`
+
+- Q3. 安装HAWQ Master节点的时候报错`Requires: libgsasl`
+
+```
+resource_management.core.exceptions.ExecutionFailed: Execution of '/usr/bin/yum -d 0 -e 0 -y install hawq' returned 1. Error: Package: hawq_2_2_0_0-2.2.0.0-4141.el7.x86_64 (hdb-2.2.0.0)
+           Requires: thrift >= 0.9.1
+Error: Package: hawq_2_2_0_0-2.2.0.0-4141.el7.x86_64 (hdb-2.2.0.0)
+           Requires: libgsasl
+```
+
+解决：`yum install epel-release`，`ambari-web`界面重试解决。
+
+- Q4. 因为`HAWQ Standby Master`初始化失败，导致`HAWQ Standby Master`服务一直无法启动，查看日志也看不出所以然来。
+
+```
+20170721:12:13:53:041104 hawq_stop:bigdata-server-3:gpadmin-[INFO]:-Stop hawq with args: ['stop', 'master']
+20170721:12:13:54:041104 hawq_stop:bigdata-server-3:gpadmin-[ERROR]:-Failed to connect to the running database, please check master status
+20170721:12:13:54:041104 hawq_stop:bigdata-server-3:gpadmin-[ERROR]:-Or you can check hawq stop --help for other stop options
+20170721:13:13:51:039854 hawqinit.sh:bigdata-server-2:gpadmin-[ERROR]:-Stop master failed
+```
+
+环境是在`CentOS Linux release 7.2.1511 (Core)`最小化安装操作系统，依赖多个第三方包，标准操作系统中都木有。
+
+待我一一解决相关软件依赖后，再去重启集群，好桑心，集群再也无法启动了，我XXX。
+
+---- xxxxx - xxxxx 
+
+- Q5. 不能访问目录`/pivotalguru_{i}`，因为做测试前需要先创建这些目录。
+
+```
+Error: cannot access directory '/pivotalguru_6'
+Please specify a valid directory for -d switch
+```
+
+这些目录会创建大量数据，所以建议这些目录放到比较大的盘，避免跑测试把根目录跑满，导致系统异常，无法正常运行。
+
+- Q7.如果资源管理器确定未注册的或不可用的HAWQ物理段数量大于hawq_rm_rejectrequest_nseg_limit，那么资源管理器直接拒绝查询的资源请求。
+
+```
+psql -v ON_ERROR_STOP=ON -f /pivotalguru/TPC-DS/04_load/051.insert.call_center.sql | grep INSERT | awk -F ' ' '{print $3}'
+psql:/pivotalguru/TPC-DS/04_load/051.insert.call_center.sql:1: ERROR:  failed to acquire resource from resource manager, 3 of 5 segments are unavailable, exceeds 25.0% defined in GUC hawq_rm_rejectrequest_nseg_limit. The allocation request is rejected. (pquery.c:804)
+```
+
+首先，排查集群状态是否可用。
+```
+postgres=# select * from gp_segment_configuration;
+ registration_order | role | status | port  |     hostname     |     address      |               description                
+--------------------+------+--------+-------+------------------+------------------+------------------------------------------
+                  0 | m    | u      |  5432 | bigdata-server-3 | bigdata-server-3 | 
+                  2 | p    | u      | 40000 | bigdata-server-2 | 192.168.0.82     | 
+                  3 | p    | u      | 40000 | bigdata-server-3 | 192.168.0.83     | 
+                  1 | p    | d      | 40000 | bigdata-server-1 | 192.168.0.81     | heartbeat timeout;failed probing segment
+                  4 | p    | d      | 40000 | bigdata-server-4 | 192.168.0.84     | heartbeat timeout;failed probing segment
+                  5 | p    | d      | 40000 | bigdata-server-5 | 192.168.0.85     | heartbeat timeout;failed probing segment
+(6 rows)
+
+Time: 1.080 ms
+
+[gpadmin@bigdata-server-3 ~]$ hawq state   
+Failed to connect to database, this script can only be run when the database is up.
+```
+
+
+**简单测试**
+
+```
+[gpadmin@bigdata-server-3 ~]$ source /usr/local/hawq/greenplum_path.sh
+[gpadmin@bigdata-server-3 ~]$ psql -d postgres
+psql (8.2.15)
+Type "help" for help.
+
+postgres=# create database test;
+CREATE DATABASE
+
+postgres=# \c test
+You are now connected to database "test" as user "gpadmin".
+
+test=# create table t (i int);
+CREATE TABLE
+
+test=# insert into t select generate_series(1,100);
+INSERT 0 100
+
+test=# \timing
+Timing is on.
+
+test=# select count(*) from t;
+ count 
+-------
+   100
+(1 row)
+
+Time: 75.539 ms
+
+test-# \q
+```
+
+通过`Ambari`自动化安装HAWQ集群感受，这哪是安装啊，没有安，全程只有装，装完这个装那个，还报错~ 囧。
 
 待全方位测试之后，我在发一篇完整的吧，HAWQ论文我是读完了，个人没感到有什么创新点，感兴趣的可以看看。
 
@@ -157,9 +271,9 @@ NoSuchMethodError: org.apache.hadoop.hive.metastore.MetaStoreUtils.updatePartiti
 ```
 
 ### TPCDS 性能
-![Hive2-with-LLAP](https://github.com/itweet/labs/raw/master/BigData/img/Hive2-with-LLAP.png)
+![Hive-with-LLAP](https://github.com/itweet/labs/raw/master/BigData/img/Hive-with-LLAP.png)
 
-上图，可以看出，Hive2在性能上有了很大的提升，至于为什么，关注微信的可能又看到过有关Hive with LLAP优化的文章，剖析了很多篇，由于个人事迹问题，导致博客和微信有些文章没时间同步。
+上图，可以看出，Hive2在性能上有了很大的提升，至于为什么，关注微信的可能又看到过有关Hive with LLAP优化的文章，剖析了很多篇，由于个人时间问题，导致博客和微信有些文章没时间同步。
 
 相对来说Hive,SparkSQL在跑TPCDS的时候，在稳定性上都有了长足的进步，不在会出现各种莫名其妙崩溃的问题，甚至查询几个小时都没结果的情况，但是易用性和细粒度资源控制上还有很长的路要走，要达到企业级产品级别，各种做大数据发现版的公司得花费大的精力去完善产品，达到企业级可用的程度。
 
