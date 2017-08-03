@@ -101,7 +101,7 @@ Ambari Server 'start' completed successfully.
 
 通过登录页面进入集群安装向导，如下所示。
 
-![launch-install-wizard](ambari-launch-install-wizard.png)
+![launch-install-wizard](https://github.com/itweet/labs/raw/master/BigData/img/ambari-launch-install-wizard.png)
 
 通过鼠标单击”Launch Install Wizard”按钮，通过11个setup引导步骤，进行可视化的集群安装。
 
@@ -109,21 +109,21 @@ Ambari Server 'start' completed successfully.
 
 步骤1，需要填入一个集群名称Cluster Name，点击下一步。例如：    
 
-![Step1-Get-Started](Step1-Get-Started.png)
+![Step1-Get-Started](https://github.com/itweet/labs/raw/master/BigData/img/Step1-Get-Started.png)
 
 #### Step2 - Select Version
 
 选择使用HDP的版本，默认支持4个HDP版本的安装部署，鼠标点击“Use Local Repository”填入之前制作的本地仓库源地址,点击下一步：
 
-![Step2-Select-Version](Step2-Select-Version.png)
+![Step2-Select-Version](https://github.com/itweet/labs/raw/master/BigData/img/Step2-Select-Version.png)
 
-![Step2-Select-Version-2](Step2-Select-Version-2.png)
+![Step2-Select-Version-2](https://github.com/itweet/labs/raw/master/BigData/img/Step2-Select-Version-2.png)
 
 #### Step3 - Install Options
 
 填写需要安装的目标主机节点的hosts映射名称，私钥信息填写为ambari-server所在节点，可以免密码登录所有节点的用户私钥信息。例如：一般通过root用户进行集群的安装，如下填写root用户” /root/.ssh/ id_rsa”文件内容。
 
-![Step3-Install-Options](Step3-Install-Options.png)
+![Step3-Install-Options](https://github.com/itweet/labs/raw/master/BigData/img/Step3-Install-Options.png)
 
 点击“Register and Confirm”进入下一步。
 
@@ -131,7 +131,7 @@ Ambari Server 'start' completed successfully.
 
 在这个步骤ambari-server节点会并行去多台机器执行相关命令。首先scp相关的ambari-agent的setup脚本到多台机器，然后并行执行相关的命令进行ambari-agent的安装，注册ambari-agent节点到ambari-server。这里主要工作是在所有节点安装ambari-agent，并且把ambari-agent注册到ambari-server，让server可以控制所有的agent节点。之后ambari-server就可以控制所有的agent执行命令进行HDP集群的安装。
 
-![Step3-Confirm-Hosts](Step3-Confirm-Hosts.png)
+![Step3-Confirm-Hosts](https://github.com/itweet/labs/raw/master/BigData/img/Step3-Confirm-Hosts.png)
 
 点击“Next”继续安装。
 
@@ -139,15 +139,15 @@ Ambari Server 'start' completed successfully.
 
 选择你需要安装的服务，目前HDP提供了30多个组件的自动化安装和部署维护。如下图所示：
 
-![Step4-Choose-Services](Step4-Choose-Services.png)
+![Step4-Choose-Services](https://github.com/itweet/labs/raw/master/BigData/img/Step4-Choose-Services.png)
 
 #### Step5 - Assign Masters
 
 分配主节点所在主机，在分布式软件系统中，大多数都是有中心的结构，有主节点、从节点之分，所以这一步是对分布不是系统，主从架构的主节点角色分配，比如：HDFS NameNode安装在什么机器，Yarn ResourceManager安装在那个机器可以自主选择，当然如果你是第一次安装集群，就让它使用它默认自动选择的方式，避免调整角色分配导致安装失败。如下图：
 
-![Step5-Assign-Masters-1](Step5-Assign-Masters-1.png)
+![Step5-Assign-Masters-1](https://github.com/itweet/labs/raw/master/BigData/img/Step5-Assign-Masters-1.png)
 
-![Step5-Assign-Masters-2](Step5-Assign-Masters-2.png)
+![Step5-Assign-Masters-2](https://github.com/itweet/labs/raw/master/BigData/img/Step5-Assign-Masters-2.png)
 
 #### Step6 - Assign Slaves and Clients
 
@@ -156,7 +156,7 @@ Ambari Server 'start' completed successfully.
 - 从节点 – 有n个，一个节点就代表一台物理主机或者虚拟主机。 
 - 客户端 – 有n个，一般是客户机上需要安装客户端，让客户机可以提交任务到集群。
 
-![Step6-Assign-Slaves-and-Clients](Step6-Assign-Slaves-and-Clients.png)
+![Step6-Assign-Slaves-and-Clients](https://github.com/itweet/labs/raw/master/BigData/img/Step6-Assign-Slaves-and-Clients.png)
 
 #### Step7 - Customize Services
 
@@ -164,25 +164,25 @@ Ambari Server 'start' completed successfully.
 
 还有些服务，需要自己根据提示输入一些用户密码的内容，请牢记相关服务器输入的用户密码，因为这些会在后台Ambari-server数据库中创建相应的数据库。指不定那天就需要登录后台数据库解决一些问题。
 
-![Step7-Customize-Services](Step7-Customize-Services.png)
+![Step7-Customize-Services](https://github.com/itweet/labs/raw/master/BigData/img/Step7-Customize-Services.png)
 
 #### Step8 - Review
 
 在安装之前预览集群服务分配和节点相关信息是否正确，可以通过`Print`进行打印下载，查看更加详细的角色分配信息，如果检测没有任何问题，你就可以进行下一步`Deploy`了。
 
-![Step8-Review](Step8-Review.png)
+![Step8-Review](https://github.com/itweet/labs/raw/master/BigData/img/Step8-Review.png)
 
 #### Step9 - Install, Start and Test
 
 自动化安装、启动集群、自动化Test集群，根据你的硬件环境和网络相关因素，你需要等待一段时间，等集群自动化安装成功，所有主机`Status`都变成绿色进度条，那就可以点击`Next`。
 
-![Step9-Install-Start-and-Test](Step9-Install-Start-and-Test.png)
+![Step9-Install-Start-and-Test](https://github.com/itweet/labs/raw/master/BigData/img/Step9-Install-Start-and-Test.png)
 
 #### Step10 – Summary
 
-![Step10–Summary](Step10–Summary.png)
+![Step10–Summary](https://github.com/itweet/labs/raw/master/BigData/img/Step10–Summary.png)
 
-![ambari–dashboard](ambari–dashboard.png)
+![ambari–dashboard](https://github.com/itweet/labs/raw/master/BigData/img/ambari–dashboard.png)
 
 至此、集群安装完毕。
 
