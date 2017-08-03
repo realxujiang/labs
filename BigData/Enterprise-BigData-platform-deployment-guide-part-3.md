@@ -22,7 +22,7 @@
 - Master1/Master2： Namenode、ResourceManager，HMaster，ZKServer，Journalnode
 - Ambari Manager：Ambari Server、ZKServer，Journalnode
 
-ZKServer，Journalnode保证基数个节点，这里涉及到3个管理节点，物理上对应着3台物理服务器，在物理逻辑上保证他们尽量放置于不同的机架。
+ZKServer，Journalnode保证奇数个节点，这里涉及到3个管理节点，物理上对应着3台物理服务器，在物理逻辑上保证他们尽量放置于不同的机架。
 
 ### 磁盘划分
 
