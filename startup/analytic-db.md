@@ -17,15 +17,15 @@ Analytic DB
 * GBase 8a      南大通用
 * HAWQ  		Pivotal / oushu.io  (-> Hadoop
 * Impala		Cloudera            (-> Hadoop
-* Vertica		HP Company
+* Vertica		HP Company          
 
 ### Hadoop  
 
-* CDH  						Cloudera
-* HDP  						Hortonworks
-* TDH  						Transwarp
+* CDH  						Cloudera   
+* HDP  						Hortonworks   
+* TDH  						Transwarp  
 * CRH  						Redoop  
-* MapR Platform 			MapR
+* MapR Platform 			MapR  
 
 ### NewSQL
 
