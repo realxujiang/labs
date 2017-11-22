@@ -29,7 +29,7 @@ Data Warehouses: Past, Present, and Future
 
 数据仓库真正的意义是什么？为什么企业对数据仓库支出不断增加。这是因为不是数据量和速度问题。随着发展，我们只需要增加硬件就能增加我们数据处理的规模，这才是分布式系统的强大之处。
 
-万物互联的时代，随着数据的多样性和异质性从而增加数据分析的复杂性。我们的需求是关联和整合这些数据。但是，我们现有的数据分析工具，Hadoop或Spark并没有带来任何神器的解决方案。我们仍然在努力解决同样的问题：如何从不同的渠道获取数据、然后将他们关联起来，这样企业可以让数据说话，数据驱动决策。为了解决这个问题，我们需要依赖更多新的工具。
+万物互联的时代，随着数据的多样性和异质性从而增加数据分析的复杂性。我们的需求是关联和整合这些数据。但是，我们现有的数据分析工具，Hadoop或Spark并没有带来任何神器的解决方案。我们仍然在努力解决同样的问题：如何从不同的渠道获取数据、然后将他们关联起来，这样企业可以让数据说话，数据驱动决策。为了解决这些问题，我们需要依赖更多新的工具。
 
 ### 数据仓库的演变
 
@@ -37,69 +37,98 @@ Data Warehouses: Past, Present, and Future
 
 那么，我们来看看不同的技术，是如何帮助我们解决与数据相关的需求，为业务提供数据支撑。
 
+OLAP场景的Hadoop解决方案，OLTP场景的NewSQL解决方案。
+
 ### 流水线式的数据分析
 
 我们看到一个有趣的现象，每个公司几乎都建立了一个数据流水线，随着新数据的进入，他们利用NoSQL数据库来存储文档数据。就像是一个无线容量的数据库，拥有很好的扩展性，并且还能进行大数据量的高速查询和搜索。
 
-我们可以看到很多大规模使用MongoDB、Hbase、cassandra数据库。
+我们可以看到很多大规模使用MongoDB、Hbase、cassandra数据库，还有NewSQL的发展。
 
-随着数据多样性的发展，出现了很多新型的数据库。
+随着数据多样性的出现，出现了很多新型的数据库。
+
+### 新型数据分析需求
+
+越来越高的数据分析需求和数据多样性的探索，导致了数据库系统的蓬勃发展，国产数据库也有了非常大的进步可以进入国际顶级的数据库会议发表论文，2017年腾讯的开源项目VLDB也发文了，而做为去IOE发起者的阿里在云端阿里云也如火如荼的发展数据库服务，比如：`PolarDB`、蚂蚁金服金融级数据库分布式数据库`OceanBase`都是黑科技级别的产品。为了在云端兼顾OLTP和OLAP的数据分析引擎，各大云厂商阿里云、腾讯云、XX云都使劲的推广各自的数据库技术，也采取与开源数据库厂商广泛合作的方式。
+
+有关底层数据库系统，特别是NewSQL几大巨头也有有在长期招聘相关职位。可见目前分布式OLTP/OLAP数据库发展的势头，必然是与`Cloud`相结合，也只有云化才有机会大把捞金，不然开源数据库这样的生态下，底层基础软件出路在何方？
+
+![新型数据分析需求](https://github.com/itweet/labs/raw/master/BigData/img/new-data-requirements-analysis.png)
 
 ### Analytic DB 的发展
 
-我们列表 `RDBMS -> MPP -> HADOOP -> NOSQL -> NEWSQL` 主流的系统。
+我们列表 `RDBMS -> MPP -> HADOOP -> NOSQL -> NEWSQL` 主流的系统，根据我接触过的公司或产品来列举，个人认知有限，如未能列表全面，欢迎补充。
 
 #### RDBMS
 
-* Oracle        Oracle
-* SQLServer     Microsoft
-* DB2           IBM
-* PostgreSQL    community
-* MySQL         Oracle & community
-* MariaDB       community
+|    数据库     |              公司               |
+| ------------ | ------------------------------- |
+|  Oracle      |            Oracle               |
+| SQLServer    |           Microsoft             |
+|     DB2      |              IBM                |
+| PostgreSQL   |           community             |
+| MySQL        |       Oracle & community        |
+| MariaDB      |       MariaDB & community       |
 
 #### MPP
 
-* Greenplum     Pivotal / DeepGreen
-* Teradata      Teradata Company
-* GBase 8a      南大通用
-* HAWQ          Pivotal             (-> Hadoop
-* Impala        Cloudera            (-> Hadoop
-* Vertica       HP Company          
+|    数据库     |                 公司            |
+| ------------ | ------------------------------- |
+|  Greenplum   |            Pivotal / DeepGreen  |
+| Teradata     |           Teradata              |
+| GBase 8a     |             南大通用             |
+| HAWQ         |       Pivotal(SQL on Hadoop)    |
+| Impala       |       Cloudera(SQL on Hadoop)   |
+| Vertica      |          HP                     |
 
-#### Hadoop  
+#### Hadoop  Ecosystem
 
-* CDH                       Cloudera   
-* HDP                       Hortonworks   
-* TDH                       Transwarp  
-* CRH                       Redoop  
-* MapR Platform             MapR  
+|  大数据发行版  |              公司               |
+| ------------ | ------------------------------- |
+|    CDH       |            Cloudera             |
+|    HDP       |            Hortonwork           |
+|    MapR      |            MapR                 |
+|    TDH       |            Transwarp            |
+|    CRH       |            Redoop               |
+|    XXX       |            Unknown              |
 
 #### NoSQL
 
-* MongoDB
-* Hbase
-* Cassandra
-* Hypertable
-* Accumulo
-* Elasticsearch
+|   NoSQL系统   |              公司               |
+| ------------ | ------------------------------- |
+|    MongoDB   |        MongoDB Company          |
+|    Hbase     |            Community            |
+|    Cassandra |            DataStax             |
+|   Hypertable |            Zvents               |
+|   Accumulo   |            Community            |
+| Elasticsearch|            Elastic              |
 
 #### NewSQL
 
-* Spanner 
-* CockroachDB 
-* TiDB 
-* SearchDB 
-* OceanBase
+|  NewSQL系统   |              公司               |
+| ------------ | ------------------------------- |
+|    Spanner   |            Google Cloud         |
+| CockroachDB  |   CockroachLabs & Community     |
+|    TiDB      |   PingCAP  & Community          |
+|   OceanBase  |            阿里巴巴              |
+|   CrateDB    |         CrateDB & Community     |
 
-虽然NoSQL因其性能、可伸缩性与可用性而广受赞誉，但其开发与数据重构的工作量要大于SQL存储。因此，有些人开始转向了NewSQL，它将NoSQL的优势与SQL的能力结合了起来。最为重要的是使用能够满足需要的解决方案。
+虽然NoSQL因其性能、可伸缩性与可用性而广受赞誉，但其开发与数据重构的工作量要大于SQL存储。因此，有些人开始转向了NewSQL，它将NoSQL的优势与SQL的能力结合了起来。
 
 * OLAP场景做到极致的Hadoop生态。
 * OLTP场景的NewSQL数据库的发展。
 
-各大云厂商也在大力发展支持OLTP的分布式金融级别的关系数据库，已解决MySQL分库分表难于管理的问题，分布式以后提供弹性的伸缩能力。
+![新型数据库](https://github.com/itweet/labs/raw/master/BigData/img/db_type.png)
 
+各大云厂商也在大力发展支持OLTP的分布式金融级别的关系数据库，已解决MySQL分库分表难于管理的问题，底层直接提供分布式能力，而不用在业务层大动干戈，平滑迁移关系型单机数据库到分布式数据库集群，分布式以后提供弹性的伸缩能力，利用云端优势，发展基础软件即服务，帮助客户轻松应对海量数据多维度分析需求。
 
+关于如今高速发展的数据引擎发展与详细设计细节，会通过`ITweet Talk`系列逐一介绍。
+
+欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
+![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
+
+原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
+`本博客的文章集合:` http://www.itweet.cn/blog/archive/
 
 
 
