@@ -5,13 +5,13 @@
 
 ### CRH v5.0产品功能和性能解析
 
-![CRH v5.0产品功能和性能解析](https://v.qq.com/x/page/s0525vkupea.html)
+[CRH v5.0产品功能和性能解析](https://v.qq.com/x/page/s0525vkupea.html)
 
 关于 *`CRH v5.0产品功能和性能解析`* 介绍企业级大数据平台的设计与实践。
 
 ### CRH V5.1产品介绍
 
-![CRH V5.1产品介绍](https://v.qq.com/x/page/l0509n3pw0v.html)
+[CRH V5.1产品介绍](https://v.qq.com/x/page/l0509n3pw0v.html)
 
 关于 *`CRH V5.1产品介绍`* 介绍企业级大数据平台产品化之路。
 
@@ -25,11 +25,11 @@
 
 * ​2 技术路线，保持持续学习的习惯。
 
-![杂谈《编程之路职业指导》](https://v.qq.com/x/page/p0559qysi38.html)
+[杂谈《编程之路职业指导》](https://v.qq.com/x/page/p0559qysi38.html)
 
 ### 我为什么创立Facebook
 
-![我为什么创立Facebook](https://v.qq.com/x/page/p0559qysi38.html)
+[我为什么创立Facebook](https://v.qq.com/x/page/p0559qysi38.html)
 
 关于`扎克伯格`在清华煲了一锅中文鸡汤，我为什么创立Facebook。
 
