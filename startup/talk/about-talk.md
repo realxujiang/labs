@@ -25,7 +25,7 @@
 
 * ​2 技术路线，保持持续学习的习惯。
 
-[杂谈《编程之路职业指导》](https://v.qq.com/x/page/p0559qysi38.html)
+[杂谈《编程之路职业指导》](https://v.qq.com/x/page/u0513zxrls1.html)
 
 ### 我为什么创立Facebook
 
