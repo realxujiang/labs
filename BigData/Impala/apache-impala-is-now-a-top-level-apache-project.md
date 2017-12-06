@@ -13,7 +13,7 @@ Apache Impala现在已晋升为Apache顶级项目
 
 Cloudera的`Jim Apple`是Apache Impala的重要导师，并且即将担任副总裁，他将持续以Apache way的方式指导和发展开源社区。
 
-这是impala项目及社区非常重要的时刻，未来impala将拥有更大规模的运行，为在云端持续优化减轻工作负载而努力。期待更多人参与推动impala的发展。
+这是impala项目及社区非常重要的时刻，未来Impala将拥有更大规模的运行，为在云端持续优化减轻工作负载而努力。期待更多人参与推动impala的发展。
 
 * 资源列表：
     - 项目地址: https://impala.apache.org
@@ -51,7 +51,7 @@ Impala可以无缝融入现有Hadoop集群，支持直接hive中的数据，完�
 
 这里说一个Impala坑，由于他没有直接存储元数据信息，而是靠从Hive Metastore定期同步，因为impalad任何一个节点都有可能充当协调者和执行者的角色，所以元数据信息需要所有节点存储最新的数据，这是为了兼容Hive而导致的一些遗留问题。Statestored模块的作用是实现一个业务无关的订阅(Subscribe)发布(Publish)系统，元数据的更改需要它去进行通知各个节点，这解决了一个MPP无法大规模扩展的问题，大大增加了系统的可扩展性，降低了catalogd的实现和运维复杂度。但是，带来一个问题，由于impalad可以直接提供jdbc服务，如果连接的任意impalad创建表，那么其他节点短期内是不知道这个表已经存在并且提供服务的，这个时候，如何解决，需要你每次只需SQL的时候都去执行`INVALIDATE METADATA Statement`，否则无法及时查询到最新的数据。
 
-如果出现，底层HDFS抽取大量分区数据入库，不执行`INVALIDATE METADATA Statement`则无法查询到最新的数据，这个时候，我们客户就通过ETL Server每个30秒就执行全局的metadata更新，导致impalad底层疯狂的去`Scan`HDFS上的数据，日志在后台一直疯狂刷新block信息。导致impala急剧下降，甚至一个SQL很久都无法返回结果的情况。只有简单查询才能有结果。所以一定要慎用、合理的用`INVALIDATE METADATA`。
+如果出现，底层HDFS抽取大量分区数据入库，不执行`INVALIDATE METADATA Statement`则无法查询到最新的数据，这个时候，我们客户就通过ETL Server每隔30秒就执行全局的metadata更新，导致impalad底层疯狂的去`Scan`HDFS上的数据，日志在后台一直疯狂刷新block信息。导致impala急剧下降，甚至一个SQL很久都无法返回结果的情况。只有简单查询才能有结果。所以一定要慎用、合理的用`INVALIDATE METADATA`。
 
 我是在2013年9月，开始接触Impala了，当时就是利用impala做hive结果数据的bi报告对接查询，效果非常不错，甚至在很长一段时间，Hadoop生态都没有出现和impala进行pk的类似软件，它是SQL on Hadoop领域唯一原生的交互式SQL查询引擎。现在出现的竞争对手有Hive on Tez(0.8+ LLAP)、GreenPlum on Hadoop、Drill、PrestoDB等。
 
