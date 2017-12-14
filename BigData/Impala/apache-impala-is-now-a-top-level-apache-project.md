@@ -1,7 +1,7 @@
 Apache Impala现在已晋升为Apache顶级项目
 ---
 
-在11月28日，上午，apache宣布Impala晋升为apache顶级项目，这一令人振奋的消息。
+在2017年11月28日，上午，apache宣布Impala晋升为apache顶级项目，这一令人振奋的消息。
 
 ![apache-impala-top-level-project](https://github.com/itweet/labs/raw/master/BigData/img/apache-impala-top-level-project.png)
 
@@ -56,7 +56,7 @@ Impala可以无缝融入现有Hadoop集群，支持直接hive中的数据，完�
 我是在2013年9月，开始接触Impala了，当时就是利用impala做hive结果数据的bi报告对接查询，效果非常不错，甚至在很长一段时间，Hadoop生态都没有出现和impala进行pk的类似软件，它是SQL on Hadoop领域唯一原生的交互式SQL查询引擎。现在出现的竞争对手有Hive on Tez(0.8+ LLAP)、GreenPlum on Hadoop、Drill、PrestoDB等。
 
 - Hive on Tez(LLAP)低延迟无法媲美Impala，交互式ad-hoc响应不够快
-- GreenPlum on Hadoop没有和Hadoop结合的那么紧密，优势SQL语法全，优化器实现好
+- GreenPlum on Hadoop与Hadoop生态圈结合不紧密，历史包袱重。优势：SQL语法全，高效率优化器
 - PrestoDB早期测试过也出过报告，稳定性太差，内存管理功能都没有，压力大节点直接失去联系
 - Drill性能表现不错，支持很多数据源，功能上有些类似PrestoDB
 
