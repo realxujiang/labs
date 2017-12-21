@@ -1,4 +1,4 @@
-HDFS FUSE 访问频繁导致操作系统奔溃
+HDFS FUSE 访问频繁致使系统奔溃
 ---
 
 ![pWalrus_HDFS](https://github.com/itweet/labs/raw/master/BigData/img/pWalrus_HDFS.jpg)

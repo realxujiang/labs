@@ -12,12 +12,12 @@ Analytic DB
 
 ### MPP
 
-* Greenplum     Pivotal / DeepGreen
+* Greenplum     Pivotal / DeepGreen     
 * Teradata      Teradata Company
 * GBase 8a      南大通用
 * HAWQ  		Pivotal / oushu.io  (-> Hadoop
 * Impala		Cloudera            (-> Hadoop
-* Vertica		HP Company          
+* Vertica		HP Company          邮储 200台 限制
 
 ### Hadoop  
 
