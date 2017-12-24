@@ -7,7 +7,7 @@ Just for Fun: The Story of an Accidental Revolutionary
 
 这个毫不起眼，出生于芬兰，22岁编写Linux操作系统、搅动世界风云的大学生。
 
-![linus torvalds](linus-torvalds.jpg)
+![linus torvalds](https://github.com/itweet/labs/raw/master/startup/books/img/linus-torvalds.jpg)
 
 一生奉献给开源软件Linux，为人非常低调，深居简出，一切为了Linux操作系统更好，更利于使用，你只有在Linux社区邮件列表中经常看到他发言。媒体宣传把他的形象描绘的如一代圣人，在书中他会陈述更多的事实。
 
