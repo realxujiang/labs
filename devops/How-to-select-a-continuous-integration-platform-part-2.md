@@ -3,7 +3,7 @@
 
 新的一年，开始研发新的产品。由于新团队成员，所以需要构建一套持续集成平台。
 
-我从事的是开源软件事业，所以需要访问互联网上面大量的软件包，每天都有上百个容器的创建和销毁，一切都是为了自动化，更高效率的交付产品。让大家专注工作于正确的方向上，更快的迭代产品，专注coing，而不会被固定的流程化操作的打断工作进度。
+我从事的是开源软件事业，所以需要访问互联网上面大量的软件包，每天都有上百个容器的创建和销毁，一切都是为了自动化，更高效率的交付产品。让大家专注工作于正确的方向上，更快的迭代产品，专注coding，而不会被固定的流程化操作的打断工作进度。
 
 #### 说几点需求点
 
@@ -45,7 +45,7 @@
 
 支持系统：Ubuntu、centos、redhat
 
-![](https://github.com/itweet/labs/raw/master/devops/img/DevOps-1.png)
+![](https://github.com/itweet/labs/raw/master/devops/img/devops-1.png)
 
 ##### 2 资源列表
 
@@ -101,26 +101,8 @@
 
 通过钩子程序，发现有代码更新自动化的拉取最新合并的代码构建、测试、生成测试报告，邮件反馈给开发此功能的开发人员。
 
-欢迎关注微信公众号[Whoami]，阅读更多内容。
+欢迎关注微信公众号[whoami]，阅读更多内容。
 ![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
