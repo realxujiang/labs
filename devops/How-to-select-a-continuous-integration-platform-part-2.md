@@ -45,7 +45,7 @@
 
 支持系统：Ubuntu、centos、redhat
 
-![](https://github.com/itweet/labs/raw/master/devops/img/devops-1.png)
+![](https://github.com/itweet/labs/raw/master/devops/img/devops-2.png)
 
 ##### 2 资源列表
 
