@@ -101,7 +101,11 @@
 
 通过钩子程序，发现有代码更新自动化的拉取最新合并的代码构建、测试、生成测试报告，邮件反馈给开发此功能的开发人员。
 
+欢迎关注微信公众号[Whoami]，阅读更多内容。
+![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
+原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
+`本博客的文章集合:` http://www.itweet.cn/blog/archive/
 
 
 
