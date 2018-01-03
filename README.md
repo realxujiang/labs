@@ -1,6 +1,6 @@
-# labs
+# Jikelab
 
-[Itweet & Boot](http://itweet.cn/blog) 个人实验室
+[JikeLab](http://www.jikelab.com)
 
 * 原创内容：
   - BigData

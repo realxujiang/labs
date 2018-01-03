@@ -1,4 +1,4 @@
-什么是持续集成？
+什么是持续集成？    
 ---
 
 持续集成CI，在一般软件开发中，每个人在完成项目工作后开始完成整合工作。整合一般需要数周或数月时间，整合过程是非常痛苦的。持续集成是一种在早期开发阶段，每天数次的合并代码到主干，持续的进行构建、测试和集成代码。
@@ -78,8 +78,8 @@
 
 [1] https://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/
 
-欢迎关注微信公众号，第一时间，阅读更多有关云计算、大数据文章。
-![Itweet公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
+欢迎关注微信公众号[Whoami]，阅读更多内容。
+![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
 `本博客的文章集合:` http://www.itweet.cn/blog/archive/
