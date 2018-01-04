@@ -62,7 +62,7 @@
 
 容器，提供本地容器平台，可以自动去中央仓库同步没有的容器镜像。
 
-虚拟化，参考：`我为什么弃用OpenStack转向VMware vsphere`。
+虚拟化，参考：[`我为什么弃用OpenStack转向VMware vsphere`](http://itweet.cn/blog/2018/01/02/What-is-continuous-integration-part-1)。
 
 以上服务器都可以使用云主机，针对私服、源码服务器、镜像服务器底层存储使用云硬盘(带有分不知容错的存储软件)，保障数据安全。其他服务器随意使用虚拟机即可。
 
