@@ -103,12 +103,34 @@ csrutil enable; reboot
 
 需要突破系统一些限制，所以稍微有点繁琐。
 
+附上我的`~/.zshrc`配置
+
+```
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version)
+
+POWERLEVEL9K_OS_ICON_BACKGROUND="white"
+POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+```
+
 ## 小结
 
 废话少说，上效果图。
 
 ![效果图](https://camo.githubusercontent.com/80ec23fda88d2f445906a3502690f22827336736/687474703a2f2f692e696d6775722e636f6d2f777942565a51792e676966)
 
+欢迎关注微信公众号[whoami]，阅读更多内容。
+![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
+原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
+`本博客的文章集合:` http://www.itweet.cn/blog/archive/
 
 
