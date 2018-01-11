@@ -29,27 +29,29 @@ Outline一览，全是能讲清楚Apache Impala的好东西，可以看到Impala
 
 由于内容太多，摘录部分，精彩slide片段，获取完整内容，点击[阅读原文]。
 
-![impala-1](impala-1.png)
+![impala-1](https://github.com/itweet/labs/raw/master/BigData/img/impala-1.png)
 
-![impala-logical-vivew](impala-logical-vivew.png)
+![impala-logical-vivew](https://github.com/itweet/labs/raw/master/BigData/img/impala-logical-vivew.png)
 
-![multi-storage-select](multi-storage-select.png)
+![multi-storage-select](https://github.com/itweet/labs/raw/master/BigData/img/multi-storage-select.png)
 
-![query-optimization-join](query-optimization-join.png)
+![query-optimization-join](https://github.com/itweet/labs/raw/master/BigData/img/query-optimization-join.png)
 
-![scanner-query](scanner-query.png)
+![scanner-query](https://github.com/itweet/labs/raw/master/BigData/img/scanner-query.png)
 
-![llvm-codegen](llvm-codegen.png)
+![llvm-codegen](https://github.com/itweet/labs/raw/master/BigData/img/llvm-codegen.png)
 
-![codegen-order-top](codegen-order-top.png)
+![codegen-order-top](https://github.com/itweet/labs/raw/master/BigData/img/codegen-order-top.png)
 
-![straming-agg](straming-agg.png)
+![straming-agg](https://github.com/itweet/labs/raw/master/BigData/img/straming-agg.png)
 
-![runtime-filters](runtime-filters.png)
+![runtime-filters](https://github.com/itweet/labs/raw/master/BigData/img/runtime-filters.png)
 
-![impala-roadmap](impala-roadmap.png)
+![impala-roadmap](https://github.com/itweet/labs/raw/master/BigData/img/impala-roadmap.png)
 
 介绍了一些核心的优化思路和代码实现，非常值得，通过实战系统研究优化成果，探索高性能Impala使用方式。
+
+Slide地址：https://github.com/jikelab/labs/tree/master/slide
 
 欢迎关注微信公众号[Whoami]，阅读更多内容。
 ![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
