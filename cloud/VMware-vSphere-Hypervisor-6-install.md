@@ -12,18 +12,23 @@ VMware vSphere 是业界领先且最可靠的虚拟化平台。vSphere将应用�
 ## 制作U盘启动
 
 - 1、打开UItraISO 文件-打开`VMware-VMvisor-Installer-6.5.0-4564106.x86_64.iso`
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/u-install-setup-1.png)
 
 - 2、启动-写入硬盘镜像
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/u-install-setup-2.png)
 
 - 3、选择你要写入的U盘
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/u-install-setup-3.png)
 
 - 4、制作U盘启动会把U盘格数据式化
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/u-install-setup-4.png)
 
 - 5、开始刻录镜像到U盘
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/u-install-setup-5.png)
 
 ## 交互式安装ESXI6.5
@@ -38,7 +43,7 @@ VMware vSphere 是业界领先且最可靠的虚拟化平台。vSphere将应用�
 
 - 3、单击“回车”键确认，确定安装
 
-![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-1.png.png)
+![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-1.png)
 
 - 4、按“F11”接受VMware协议
 
@@ -53,15 +58,19 @@ VMware vSphere 是业界领先且最可靠的虚拟化平台。vSphere将应用�
 ![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-4.png)
 
 - 7、输入默认管理员root的密码，密码要求7位以上，单击“回车”键确认
-![](install-esxi-5.png)
+
+![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-5.png)
 
 - 8、单击“F11”键确认安装
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-6.png)
 
 - 9、安装进行中。
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-7.png)
 
 - 10、安装完成，提示单击“回车”键重启进入ESXI6.5。
+
 ![](https://github.com/itweet/labs/raw/master/cloud/img/install-esxi-8.png)
 
 ## 配置ESXI6.5网络
@@ -154,6 +163,7 @@ Set static IPv4 address and network configuration        配置静态IPv4地
 基本上、都是小白式安装、小白式使用，传入镜像，安装一个基础的版本，做一个镜像或者快照，就可以生成相应版本的操作系统、类似VMware系列产品、高度一致。
 
 欢迎关注微信公众号[Whoami]，阅读更多内容。
+
 ![Whoami公众号](https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif)
 
 原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
