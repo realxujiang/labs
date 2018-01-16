@@ -3,6 +3,7 @@
 
 2017年 JavaScript 明星项目
 正如去年一样，是时候让我们来回顾 2017 年间 JavaScript 领域的变化与发展了。
+
 我们通过对比各项目于过去 12 个月在 GitHub 上新增 Star 数量的方式，来评估其在 2017 年度的受关注程度，进而选出2017 年度 JavaScript 领域崛起的明星项目。
 
 ![](https://github.com/itweet/labs/raw/master/WebDesign/img/risingstars.png)
