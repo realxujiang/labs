@@ -1,4 +1,4 @@
-Apache HAWQ：MPP的进化 - 理解Batch和MPP优缺点
+MPP的进化 - 深入理解Batch和MPP优缺点
 ---
 
 ## 前言
@@ -23,7 +23,7 @@ Impala/Drill/PrestoDB/HAWQ/Greenplum/Dremel/HP Vertica - `MPP系统`。
 
 ## 正文
 
-【Apache HAWQ(incubating)](http://hawq.incubator.apache.org/)的第一个版本受益于ASF(Apache software foundation)组织，通过将MPP(Massively Parallel Processing)和批处理系统(batch system)有效的结合，在性能上有了很大的提升，并且克服了一些关键的限制问题。一个新的重新设计的执行引擎在以下的几个问题在总体系统性能上有了很大的提高：
+[Apache HAWQ(incubating)](http://hawq.incubator.apache.org/)的第一个版本受益于ASF(Apache software foundation)组织，通过将MPP(Massively Parallel Processing)和批处理系统(batch system)有效的结合，在性能上有了很大的提升，并且克服了一些关键的限制问题。一个新的重新设计的执行引擎在以下的几个问题在总体系统性能上有了很大的提高：
 
 - 硬件错误引起的短板问题(straggler)
 - 并发限制
@@ -136,7 +136,7 @@ MPP和Batch架构，正在逐渐走向融合，今天在微信圈看到一篇《
 - Batch    MapReduce -> Spark/Tez  
 - Stream   SparkStreaming -> Flink Streams -> Kafka KSQL
 - Batch + MPP  Greenplum/HP Vertica -> Dremel -> Impala/Drill/PrestoDB/HAWQ
-- Real-time Storage(Search/KV)  Druid.io/ElesticSearch/CrateDB/Hbase
+- Real-time Storage(Search/KV)  Druid.io/ElesticSearch/CrateDB/Hbase/BigTab
 
 目前一分钟上百万数据实时入库，实时查询系统属于`Real-time Storage(Search/KV)`场景。
 
@@ -145,6 +145,16 @@ MPP和Batch架构，正在逐渐走向融合，今天在微信圈看到一篇《
 我目前在研发的DataFlow属于Stream + New MPP架构，我构想的是支持海量的IOT设备实时数据处理反馈，提供可视化操作。
 
 ***今天我们不谈分布式OLTP系统，今天谈论MPP、Batch区别和优劣。***
+
+## 推荐阅读
+
+[1] 初识ClickHouse《First Time ClickHouse》
+
+[2] 大规模数据处理的演变(2003-2017)
+
+[3] Clickhouse快速上手
+
+[4] 数据仓库：过去、现在和未来
 
 ***参考：***
 
