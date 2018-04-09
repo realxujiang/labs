@@ -213,7 +213,7 @@ for i in *.zip; do echo $i; unzip -cq $i '*.csv' | sed 's/\.00//g' | clickhouse-
 
 虽然在逻辑上为三台服务器，其实物理上都是跑在一台服务器和一块磁盘。
 
-测试目的，熟悉clickhouse一些基本使用和原理，动手研究，深入理解clickhouse系统，不具备参考性。
+测试目的，熟悉clickhouse一些基本使用和原理，动手研究，深入理解clickhouse系统，不具备参考性；待有物理性能测试结果，在大肆总结一番。
 
 我们可以看到，结果是clickhouse性能真的是没话说，SQL支持度和特殊语法使得它普及变得困难。如果希望变成一个大众化的`RDBMS System`，那还需要在SQL语法和兼容性中完成大量工作。
 
