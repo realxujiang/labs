@@ -28,11 +28,6 @@
   - Architecture Design - 架构设计
   - DataBase  - 分布式数据库系统设计与实现
 
-## 原创系列
-
-微信公众号[Whoami]
+## 微信
 
 ![Whoami公众号](https://raw.githubusercontent.com/jikelab/labs/master/common/img/weixin_public.gif)
-
-原创文章，转载请注明： 转载自[Itweet](http://www.itweet.cn)的博客
-`本博客的文章集合:` http://www.itweet.cn/blog/archive
