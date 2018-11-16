@@ -1,12 +1,12 @@
-# Jikelab
+# fusionlab
 
-## 极客Lab
+## Lab
 
 作者：许江
 
 邮箱：realJiangXu@gmail.com
 
-[极客Lab](https://tech.jikelab.com/tech-labs)
+[Lab](http://itweet.cn)
 
 * 原创内容：
   - BigData - 分布式系统设计与实现
@@ -30,7 +30,7 @@
 
 ## 2018 Planning
 
-- JDataFlow Platform - [JDP企业级流分析平台](https://tech.jikelab.com/labs-docs/)
+- JDataFlow Platform - [JDP企业级流分析平台](https://fusionlab.cn)
 - Facefake App  - 换脸短视频APP
 
 ## 微信
