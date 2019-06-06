@@ -31,7 +31,6 @@
 ## 2018 Planning
 
 - JDataFlow Platform - [JDP企业级流分析平台](https://fusionlab.cn)
-- Facefake App  - 换脸短视频APP
 
 ## 微信
 
