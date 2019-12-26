@@ -4,7 +4,7 @@
 
 作者：许江
 
-邮箱：realJiangXu@gmail.com
+网络ID：whoami
 
 [Lab](http://itweet.cn)
 
