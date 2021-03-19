@@ -2,8 +2,6 @@
 
 ## Lab
 
-作者：许江
-
 网络ID：whoami
 
 [Lab](http://itweet.cn)
